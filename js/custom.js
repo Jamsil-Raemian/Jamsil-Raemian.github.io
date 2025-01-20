@@ -98,7 +98,7 @@ jQuery(document).ready(function($){
   }
   
     // FAQ 항목 클릭 시 슬라이드 효과 적용
-	const faqHeaders = document.querySelectorAll('.faq-item header');
+	/*const faqHeaders = document.querySelectorAll('.faq-item header');
 
 	faqHeaders.forEach(header => {
 		header.addEventListener('click', () => {
@@ -106,6 +106,7 @@ jQuery(document).ready(function($){
 			header.classList.toggle('active');
 		});
 	});
+	*/
 
 });
 
