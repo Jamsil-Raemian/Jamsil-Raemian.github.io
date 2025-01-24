@@ -1538,14 +1538,24 @@ h5 {
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
-
+.icon {
+    width: 90px; /* 아이콘 너비 */
+    height: 90px; /* 아이콘 높이 */
+    display: inline-block;
+}
 .icons-container {
   display: flex; /* 플렉스 박스를 사용하여 아이콘들을 나란히 배치 */
   justify-content: space-evenly; /* 아이콘들 사이에 공간을 균등하게 배치 */
   align-items: center; /* 수직 중앙 정렬 */
   width: 100%; /* 부모 요소의 너비를 100%로 설정 */
-  padding: 0 30%; /* 양쪽 여백을 5%로 설정하여 반응형 배치 */
+  padding: 0 35%; /* 양쪽 여백을 5%로 설정하여 반응형 배치 */
   box-sizing: border-box;
+}
+
+.icon-container p {
+    margin-top: 10px; /* 설명과 아이콘 사이에 여백 */
+    font-size: 15px; /* 설명 텍스트 크기 */
+	color: #c8ece9;
 }
 
 /* 각 아이콘 스타일 */
@@ -1566,8 +1576,17 @@ h5 {
 
 /* 화면이 작아졌을 때: 간격 조정 */
 @media screen and (max-width: 768px) {
+	
+	.icon {
+		width: 60px; /* 아이콘 너비 */
+		height: 60px; /* 아이콘 높이 */
+		display: inline-block;
+	}
+	.icon-container p {
+		font-size: 13px; /* 설명 텍스트 크기 */
+	}
   .icons-container {
-    padding: 0 2%;
+    padding: 0 23%; 
   }
 
   .icon.major {
