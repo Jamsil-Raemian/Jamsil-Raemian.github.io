@@ -208,6 +208,45 @@ img {
     opacity: 0; } }
 
 
+.headerHr {
+	 border: 1px solid color: rgb(43,72,80); 
+	 margin-top : 20px;
+}
+
+.countM {
+  color: #444;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.countD {
+  color: rgb(43,72,80);
+  font-weight: bold;
+  font-size: 22px;
+  margin-top : 10px;
+}
+
+
+/* 반응형 디자인 (모바일 화면) */
+@media screen and (max-width: 768px) {
+	.countM {
+	  color: rgb(43, 72, 80);
+	  font-size: 15px;
+	  font-weight: bold;
+	  letter-spacing: 4px;
+	    margin-top : 40px;
+	}
+	
+    .countD {
+	  color: rgb(43, 72, 80);
+	  font-weight: bold;
+	  font-size: 20px;
+	   margin-top : 5px;
+	
+	}
+}
+
 
 /* navigation styles
 /* ========================================== */
@@ -513,26 +552,41 @@ a.icon {
   padding: 0px 20px 0px 20px !important;
 }
 
-.header-one{
-  height: 22vh !important;
-  min-height: 420px;
-  padding-top: 120px !important;
-}
-
 .header-sub{
   height: 18vh !important;
   min-height: 380px;
-  padding-top: 120px !important;
+  padding-top: 80px !important;
+}
+
+.header-sub h1{
+  font-size: 24px;
+  color: rgb(43,72,80);
 }
 
 .header-one {
   background: url('../images/header-bg.jpg') no-repeat;
   height: 46vh !important;
-  min-height: 790px;
-  padding-top: 150px !important;
+  min-height: 620px;
+  padding-top: 35px !important;
 }
 .header-sub {
   background: url('../images/header-bg.jpg') no-repeat;
+}
+
+@media (max-width: 768px) {
+   .header-one{
+          padding-top: 70px !important;
+   }
+   
+   .header-sub{
+	  min-height: 290px;
+	  padding-top: 60px !important;
+	}
+
+	.header-sub h1{
+	  font-size: 21px;
+	  color: rgb(43,72,80);
+	}
 }
 
 /* Portfolio section styles
@@ -1130,8 +1184,7 @@ a.icon {
     font-size: 16px;
     margin-bottom: 8px;
 	margin-left: 38px;
-    color: #666;
-	
+	list-style: none;
 }
 
 /* 본문 텍스트 스타일 */
@@ -1155,6 +1208,7 @@ a.icon {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
+	font-size: 14px;
 }
 
 #rules a:hover {
@@ -1169,8 +1223,8 @@ a.icon {
 
 @media (max-width: 768px) {
 
-	 #rules h2.chapter-title {
-    font-size: 19px;
+	#rules h2.chapter-title {
+		font-size: 19px;
 	}
 
 	/* 소제목 스타일 */
@@ -1180,8 +1234,8 @@ a.icon {
 	}
 
 	#rules p {
-    font-size: 15px;
-    line-height: 1.4;
+		font-size: 15px;
+		line-height: 1.4;
 	}
 	#rules .centered-text {
 		text-align: center;

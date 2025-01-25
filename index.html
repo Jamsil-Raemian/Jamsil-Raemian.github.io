@@ -90,12 +90,35 @@ http://www.tooplate.com/view/2082-pure-mix
                 <div class="header-thumb">
                     <h1 class="wow fadeInUp" data-wow-delay="0.5s">잠실 래미안 아이파크</h1>
                     <h2 class="wow fadeInUp" data-wow-delay="0.8s">예비입주자협의회</h2>
+					<hr class="headerHr"/>
+					<div class="countM"> <span id="countdownM"></span></div>
+					<div class="countD"> <span id="countdownD"></span></div>
                 </div>
             </div>
         </div>
     </div>        
 </section>
+ <script>
+		const vDay = '2025-12-31';
+        const dDay = new Date(vDay);
 
+        function updateCountdown() {
+            const now = new Date();
+            const timeDifference = dDay - now; // 목표 날짜와 현재 시간의 차이
+
+            if (timeDifference <= 0) {
+                document.getElementById('countdown').innerHTML = vDay+"일 입주일입니다!";
+            } else {
+                const daysLeft = Math.floor(timeDifference / (1000 * 60 * 60 * 24)); // 남은 일수 계산
+				document.getElementById('countdownM').innerHTML = vDay +`입주까지`;
+                document.getElementById('countdownD').innerHTML = `D-${daysLeft}`;
+            }
+        }
+
+        // 페이지 로딩 시 바로 실행되고, 이후 매일 갱신
+        updateCountdown();
+        setInterval(updateCountdown, 24 * 60 * 60 * 1000); // 24시간마다 갱신
+    </script>
 <section id="main" class="rbody">
    <div class="container">
 		<div>
@@ -222,6 +245,7 @@ http://www.tooplate.com/view/2082-pure-mix
 <script src="js/imagesloaded.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/popup.js"></script>
 
 </body>
 </html>
