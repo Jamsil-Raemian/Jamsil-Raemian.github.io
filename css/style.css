@@ -1151,11 +1151,91 @@ a.icon {
 
 
 
+/* agree section styles
+/* ========================================== */
+.agree-content {
+	color: #333;
+}
+.agree-content p {
+	margin: 10px 0;
+}
+.agree-content strong {
+	font-size: 14px;
+	color: #333;
+}
+.agree-content hr {
+	border: 1px solid #ddd;
+	margin: 20px 0;
+}
+ul {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+ul li {
+	margin: 8px 0;
+}
+.section-title {
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 16px;
+	color: rgb(27, 157, 159);;
+}
+.btn-submit {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #28a745;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+.btn-submit:hover {
+	background-color: #218838;
+}
+.account-info {
+	background-color: #f8f9fa;
+	padding: 15px;
+	border-left: 5px solid #28a745;
+	margin-top: 20px;
+}
+
+.account-info p {
+	margin: 3px 0;
+}
+.highlight {
+	font-weight: bold;
+	color: rgb(27, 157, 159);;
+}
+
+.agree-rbtn {
+  color:rgb(254,254,254); 
+  background-color: #28a745;
+  padding: 10px 10px; 
+  border-radius: 10px; 
+  text-decoration: none; 
+  font-weight: bold; 
+  display: inline-block; 
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+.agree-rbtn:hover {
+  background-color: rgb(46, 56, 66); 
+  color: #f8f9fa; 
+  transform: scale(1.08);
+}
+
+.agree-rbtn:active {
+  background-color: #1e7e34;
+  transform: scale(1.05);
+}
+
+
 /* rules section styles
 /* ========================================== */
 #rules {
-	line-height: 1.6; /* 문장 간 간격을 넓혀서 읽기 쉽게 */
-   flex: 1; /* main 영역이 가능한 공간을 차지하게 함 */
+	line-height: 1.6; 
+   flex: 1; 
 }
 
 /* 전체 제목 스타일 */
@@ -1165,7 +1245,7 @@ a.icon {
     margin-bottom: 10px;
     text-align: center;
     color: #333;
-	text-indent: 20px; /* 첫 번째 줄 들여쓰기 20px */
+	text-indent: 20px; 
 }
 
 /* 소제목 스타일 */
