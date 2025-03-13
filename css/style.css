@@ -1423,7 +1423,7 @@ footer button {
 /* ========================================== */
 @media (max-width: 768px) {
 
-  .intro-inner {top: 30%;}
+  .intro-inner {top: 30%; left:47%;}
 
   #contact .col-md-4 {
     padding: 62px 20px 42px 32px;
@@ -1500,7 +1500,8 @@ h5 {
 }
 
 @media (max-width: 450px) {
-  .intro-inner {top: 50%;}
+  .intro-inner {top: 50%; left:45%;}
+  
 }
 
 /* faq section styles
@@ -1728,18 +1729,23 @@ h5 {
     display: inline-block;
 }
 .icons-container {
-  display: flex; /* 플렉스 박스를 사용하여 아이콘들을 나란히 배치 */
+  display: flex; 
+  gap: 10px;
   justify-content: space-evenly; /* 아이콘들 사이에 공간을 균등하게 배치 */
-  align-items: center; /* 수직 중앙 정렬 */
+  align-items: top; /* 수직 중앙 정렬 */
   width: 100%; /* 부모 요소의 너비를 100%로 설정 */
-  padding: 0 35%; /* 양쪽 여백을 5%로 설정하여 반응형 배치 */
+  padding: 0 20%; /* 양쪽 여백을 5%로 설정하여 반응형 배치 */
   box-sizing: border-box;
 }
 
 .icon-container p {
+	
     margin-top: 10px; /* 설명과 아이콘 사이에 여백 */
-    font-size: 10px; /* 설명 텍스트 크기 */
+    font-size: 13px; /* 설명 텍스트 크기 */
 	color: #c8ece9;
+	width: 63px; 
+	word-wrap: break-word;
+	vertical-align: top;
 }
 
 /* 각 아이콘 스타일 */
@@ -1767,7 +1773,7 @@ h5 {
 		display: inline-block;
 	}
 	.icon-container p {
-		font-size: 10px; /* 설명 텍스트 크기 */
+		font-size: 12px; /* 설명 텍스트 크기 */
 	}
   .icons-container {
     padding: 0 15%; 
