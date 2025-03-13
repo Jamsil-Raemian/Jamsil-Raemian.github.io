@@ -1743,7 +1743,7 @@ h5 {
     margin-top: 10px; /* 설명과 아이콘 사이에 여백 */
     font-size: 13px; /* 설명 텍스트 크기 */
 	color: #c8ece9;
-	width: 63px; 
+	width: 68px; 
 	word-wrap: break-word;
 	vertical-align: top;
 }
@@ -1773,6 +1773,7 @@ h5 {
 		display: inline-block;
 	}
 	.icon-container p {
+		width: 63px; 
 		font-size: 12px; /* 설명 텍스트 크기 */
 	}
   .icons-container {
